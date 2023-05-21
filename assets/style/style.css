@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+:root {
+  --header-font: "Nunito", sans-serif;
+  --title-font: "Pacifico", "cursive";
+}
+ul,
+li {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none !important;
+}
+a {
+  text-decoration: none !important;
+}
+#NavigationTop {
+  background-color: hsl(0, 0%, 20%);
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.headerLogo {
+  width: 150px;
+}
+.top-navigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 43px;
+}
+.phone {
+  display: flex;
+  height: 22px;
+  padding-right: 5%;
+  align-items: center;
+}
+.phoneIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.phoneNumber {
+  color: white;
+  font-size: 18px;
+  font-family: var(--header-font);
+}
+.centerLine {
+  border: solid 1px white;
+  height: 25px;
+  margin-right: 5%;
+  opacity: 0.8;
+}
+.email {
+  display: flex;
+  align-items: center;
+}
+.emailIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  border-radius: 50%;
+}
+.businessEmail {
+  color: white;
+  font-size: 18px;
+  font-family: var(--header-font);
+}
+.selectValute {
+  display: flex;
+  justify-content: end;
+  height: 43px;
+  align-items: center;
+}
+#SelectPrice {
+  height: 35px;
+  padding: 0 0 0 10px;
+  border-radius: 5px;
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+  font-family: var(--header-font);
+  font-size: 18px;
+}
+#SelectPrice option {
+  background-color: white;
+  color: black;
+  font-family: var(--header-font);
+  font-size: 18px;
+}
+@media screen and (max-width: 771px) {
+  .top-navigation {
+    display: none;
+  }
+}
+/*Navbar*/
+#Navigation {
+  background-color: #804d4e;
+}
+.navigation-item {
+  display: inline-block;
+}
+.navigation-item a {
+  display: inline-block;
+  padding: 35px 50px 40px 0;
+  color: white;
+  font-family: var(--header-font);
+  font-size: 22px;
+}
+.navigation-item a:hover {
+  color: rgb(255, 0, 0) !important;
+}
+/* main start */
+.main {
+  height: 50vw;
+  background-color: aqua;
+}
+/* main end */
+/*========================*/
+/* Footer Start */
+.footerImage {
+  width: 250px;
+}
+.footerDescription {
+  width: 80%;
+  font-family: var(--header-font);
+  font-size: 16px;
+  color: #c9cacc;
+}
+.footerSocialMedia {
+  background-color: #e2d9dc;
+  border-radius: 15%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerIcon {
+  color: #804d4e;
+  font-size: 19px;
+}
+.footerName h4 {
+  font-family: var(--header-font);
+  font-weight: 700;
+}
+.footerPagesItem {
+  color: #7c7c7c !important;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--header-font);
+}
+.footerSerach {
+  max-width: 100%;
+  position: relative;
+}
+.footerEmailAddress {
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: transparent;
+  background-color: #f1eff2;
+  color: #7c7c7c;
+  font-size: 18px;
+  font-weight: 500;
+  opacity: .8;
+  line-height: 1;
+  font-family: var(--header-font);
+}
+.footerButton {
+  position: absolute;
+  right: 13px;
+  top: 7px;
+  border-radius: 50px;
+  height: 40px;
+  width: 60px;
+  color: white;
+  border: transparent;
+  background-color: #804d4e;
+  font-size: 20px;
+}
+.footerSubscribeDesctriptionItem{
+  font-family: var(--header-font);
+  font-weight: 600;
+  font-size: 18px;
+  color:#7c7c7c;
+}
+.footerCopyright{
+  font-family: var(--header-font);
+  font-size: 17px;
+  color: #7c7c7c;
+  font-weight: 500;
+}
