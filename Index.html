@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Viserpet Html Template</title>
@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-sm-2 col-2">
-                        <img class="headerLogo" src="/assets/Image/Logo/logo02.png" alt="Logo">
+                        <img src="assets/Image/Logo/logo02.png" class="headerLogo" alt="Logo">
                     </div>
                     <div class="col-md-8 col-sm-8 col-8">
                         <div class="top-navigation">
@@ -60,12 +60,19 @@
                 <div class="row">
                     <nav>
                         <ul class="navigation">
-                            <li class="navigation-item"><a href="#">Home</a></li>
-                            <li class="navigation-item"><a href="#">About</a></li>
-                            <li class="navigation-item"><a href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                            <li class="navigation-item"><a class="navigation-item-area" href="#">Home</a></li>
+                            <li class="navigation-item"><a class="navigation-item-area" href="#">About</a></li>
+                            <li class="navigation-item"><a class="navigation-item-area" href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                                <ul class="submenu">
+                                    <li class="submenuItem "><a class="submenuItem-area" href="#">ProductCategory</a></li>
+                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Checkout</a></li>
+                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Login</a></li>
+                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Registration</a></li>
+                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Contact Us</a></li>
+                                </ul>
                             </li>
-                            <li class="navigation-item"><a href="#">Blog</a></li>
-                            <li class="navigation-item"><a href="#">Contact</a></li>
+                            <li class="navigation-item"><a class="navigation-item-area" href="#">Blog</a></li>
+                            <li class="navigation-item"><a class="navigation-item-area" href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
