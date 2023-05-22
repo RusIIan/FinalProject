@@ -6,7 +6,7 @@
   --black-h: 0;
   --black-s: 0%;
   --black-f: 20%;
-  --black:var(--black-h) var(--black-s) var(--black-f);
+  --black: var(--black-h) var(--black-s) var(--black-f);
 }
 ul,
 li {
@@ -16,6 +16,9 @@ li {
 }
 a {
   text-decoration: none !important;
+}
+* {
+  background-color: rgb(140, 96, 96);
 }
 #NavigationTop {
   background-color: hsl(0, 0%, 20%);
@@ -103,7 +106,7 @@ a {
     display: none;
   }
 }
-/*Navbar*/
+/*Navbar start*/
 #Navigation {
   background-color: #804d4e;
 }
@@ -112,16 +115,29 @@ a {
 }
 .navigation-item-area {
   display: inline-block;
-  padding: 35px 50px 40px 0;
-  color: white;
+  padding: 35px 20px 40px 0;
+  color: white !important;
   font-family: var(--header-font);
   font-size: 22px;
+}
+.navigation-item-area-icon-serach {
+  font-family: var(--header-font);
+  padding: 45px 0 40px 14px;
+  color: white !important;
+  font-size: 18px;
+}
+.navigationPages i {
+  font-size: 15px;
+  transition: 0.25s ease-in-out;
+}
+.navigationPages:hover i {
+  transform: rotate(180deg);
 }
 .submenu {
   position: absolute;
   overflow: hidden;
   max-height: 0;
-  transition: max-height .3s;
+  transition: max-height 0.3s;
   background-color: white;
 }
 .submenuItem-area {
@@ -132,25 +148,60 @@ a {
   color: black !important;
 }
 .submenuItem {
-  border-bottom: 1px solid hsl(var(--black)/0.08);
+  border-bottom: 1px solid hsl(var(--black) / 0.08);
   height: 50px;
   display: flex;
   justify-content: start;
   align-items: center;
 }
-.submenuItem:hover{
+.submenuItem:hover {
   background-color: #804d4e;
 }
-.submenuItem:hover a{
+.submenuItem:hover a {
   color: white !important;
 }
 .navigation-item:hover .submenu,
 .navigation-item:focus .submenu,
 .navigation-item:focus-within .submenu {
   max-height: 300px;
-  border: 1px solid hsl(var(--black)/0.3);
+  border: 1px solid hsl(var(--black) / 0.3);
 }
+.basketCatrRegister ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.basketCatrRegister ul li a i {
+  color: white !important;
+  font-size: 25px;
+  margin-left: 30px;
+  padding: 35px 20px 40px 0;
+}
+.cartCount {
+  position: relative;
+}
+.cartCountItem {
+  position: absolute;
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  left: 41.5px;
+  bottom: 14.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #804d4e;
+  font-weight: 500;
+}
+/* Mobil Navbar Start */
 
+/* Mobil Navbar End */
+@media screen and (max-width: 1000px) {
+  .navigation {
+    display: none;
+  }
+}
+/* navbar end */
 /* main start */
 .main {
   height: 50vw;
@@ -232,3 +283,4 @@ a {
   color: #7c7c7c;
   font-weight: 500;
 }
+/* Footer end */

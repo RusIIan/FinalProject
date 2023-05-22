@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Viserpet Html Template</title>
+    <link rel="shortcut icon" href="assets/Images/logo/favicon.png">
 </head>
 
 <body>
@@ -18,13 +19,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-sm-2 col-2">
-                        <img src="assets/Image/Logo/logo02.png" class="headerLogo" alt="Logo">
+                        <img src="assets/Images/Logo/logo02.png" class="headerLogo" alt="Logo">
                     </div>
                     <div class="col-md-8 col-sm-8 col-8">
                         <div class="top-navigation">
                             <div class="phone">
                                 <div>
-                                    <span class="phoneIcon"><img src="assets/Image/Icon/phone.png" alt="PhoneIcon"
+                                    <span class="phoneIcon"><img src="assets/Images/Icon/phone.png" alt="PhoneIcon"
                                             width="17px">
                                     </span>
                                 </div>
@@ -33,7 +34,7 @@
                             <div class="centerLine"></div>
                             <div class="email">
                                 <div>
-                                    <span class="phoneIcon"><img src="assets/Image/Icon/email.png" alt="EmailIcon"
+                                    <span class="phoneIcon"><img src="assets/Images/Icon/email.png" alt="EmailIcon"
                                             width="17px">
                                     </span>
                                 </div>
@@ -58,23 +59,72 @@
         <section id="Navigation">
             <div class="container">
                 <div class="row">
-                    <nav>
-                        <ul class="navigation">
-                            <li class="navigation-item"><a class="navigation-item-area" href="#">Home</a></li>
-                            <li class="navigation-item"><a class="navigation-item-area" href="#">About</a></li>
-                            <li class="navigation-item"><a class="navigation-item-area" href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
-                                <ul class="submenu">
-                                    <li class="submenuItem "><a class="submenuItem-area" href="#">ProductCategory</a></li>
-                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Checkout</a></li>
-                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Login</a></li>
-                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Registration</a></li>
-                                    <li class="submenuItem "><a class="submenuItem-area" href="#">Contact Us</a></li>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <nav>
+                            <ul class="navigation">
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Home</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">About</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area  navigationPages"
+                                        href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li class="submenuItem "><a class="submenuItem-area"
+                                                href="#">ProductCategory</a></li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Checkout</a></li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Login</a></li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Registration</a>
+                                        </li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Blog</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="#">Contact</a></li>
+                                <li class="navigation-item"><i
+                                        class="navigation-item-area-icon-serach fa-solid fa-magnifying-glass"></i></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="basketCatrRegister">
+                            <ul>
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#" class="cartCount"><span class="cartCountItem">12</span><i
+                                            class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="MobileNavbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">Контакты</a></li>
                                 </ul>
-                            </li>
-                            <li class="navigation-item"><a class="navigation-item-area" href="#">Blog</a></li>
-                            <li class="navigation-item"><a class="navigation-item-area" href="#">Contact</a></li>
-                        </ul>
-                    </nav>
+                            </nav>
+                        </div>
+                        <div class="mobilBasketCatrRegister">
+                            <!-- <ul>
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#" class="cartCount"><span class="cartCountItem">12</span><i
+                                            class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            </ul> -->
+                            <div class="menuBtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -98,7 +148,7 @@
                 <div class="row">
                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="footerLogo">
-                            <img src="/assets/Image/Logo/footer-logo02.png" class="footerImage" alt="">
+                            <img src="assets/Images/Logo/footer-logo02.png" class="footerImage" alt="">
                         </div>
                         <div class="footerDescription mt-3">
                             <span class="footerDescriptionItem">Maecenas tempus tellus eget cdimentum rhoncus sem quam
@@ -170,7 +220,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <p class="text-center mt-5 footerCopyright">Copyright © 2023 . All rights reserved by Viserpet.</p>
+                        <p class="text-center mt-5 footerCopyright">Copyright © 2023 . All rights reserved by Viserpet.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -178,7 +229,7 @@
     </footer>
     <!-- Footer End -->
 
-
+    <script src="assets/Js/main.js"></script>
     <script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
