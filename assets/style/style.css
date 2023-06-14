@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +9,7 @@
 :root {
   --header-font: "Nunito", sans-serif;
   --title-font: "Pacifico", "cursive";
+  --body-font: "Roboto", sans-serif;
   --black-h: 0;
   --black-s: 0%;
   --black-l: 20%;
@@ -615,7 +617,7 @@ img {
 .featureItem {
   text-align: center;
 }
-.featureItem  img{
+.featureItem img {
   margin-bottom: 15px;
 }
 .featureItem h5 {
@@ -710,3 +712,186 @@ img {
   font-weight: 500;
 }
 /*============Footer End==============*/
+
+/*==========About Start============*/
+.breadcrumbContent {
+  position: relative;
+  z-index: 1;
+  background-image: url(/assets/Images/About/breadcumb-img.png);
+  height: 100%;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.breadcrumbContent::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background-color: hsl(var(--black) / 0.78);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.breadcrumbContent img {
+  max-height: 100%;
+}
+.breadcrumbContentItem .breadcrumbContentArea {
+  color: white;
+  font-weight: 800;
+  font-family: var(--header-font);
+  font-size: 50px;
+}
+.breadcrumbContentItem nav ol li,
+li a {
+  font-size: 22px;
+}
+.aboutTitle h5 {
+  font-family: var(--title-font);
+  color: #804d4e;
+}
+.aboutTitle h1 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  width: 80%;
+}
+.aboutDescription p {
+  margin-top: 5px;
+  font-size: 17px;
+  font-family: var(--header-font);
+  color: #7c7c7c;
+}
+.aboutDescriptionTextMenuItem li {
+  margin-top: 10px !important;
+}
+.aboutDescriptionTextMenuItem li i::after {
+  content: "";
+  margin-right: 10px;
+}
+.aboutDescriptionTextMenuItem li i {
+  color: #804d4e;
+}
+.aboutClient {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  position: relative;
+  border-bottom: 1px solid hsl(var(--black) / 0.1);
+  padding-bottom: 30px;
+}
+.aboutClient::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  width: 0.1px;
+  height: 50px;
+  background-color: hsl(var(--black) / 0.3);
+  transform: translate(-50%, -50%);
+}
+.aboutAbouthorsNameProfecion p {
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(var(--black));
+  margin-bottom: 0;
+  font-family: var(--header-font);
+}
+.aboutClientText p {
+  font-size: 18px;
+  color: black;
+  font-family: var(--header-font);
+  font-weight: 400;
+  max-width: 185px;
+  margin-bottom: 0;
+}
+.aboutClientText p span {
+  color: #804d4e;
+}
+.aboutAbouthorsNameProfecion span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #7c7c7c;
+  margin-bottom: 0;
+  font-family: var(--header-font);
+}
+.aboutClientClick p {
+  font-size: 18px;
+  color: black;
+  font-family: var(--body-font);
+  margin: 15px;
+}
+.aboutClientClick p a {
+  color: #804d4e;
+  padding-left: 5px;
+}
+.chooseSectionBody {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 60px;
+}
+.chooseSectionBody::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 80%;
+  background-color: #804d4e;
+  opacity: 0.9;
+  z-index: -1;
+}
+.chooseSectionImg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 70%;
+  z-index: -2;
+}
+.chooseSectionItem {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.chooseSectionItem h5 {
+  color: white;
+  font-family: var(--title-font);
+  font-weight: 700;
+  font-size: 20px;
+}
+.chooseSectionItem h2 {
+  color: white;
+  font-family: var(--header-font);
+  font-weight: 700;
+  font-size: 35px;
+}
+.chooseSectionArea {
+  padding: 60px;
+  text-align: center;
+  background-color: rgb(255, 0, 0) !important;
+  border-radius: 5px;
+}
+.chooseSectionAreaItemContent h4 {
+  font-family: var(--header-font);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.chooseSectionAreaItemContent p {
+  font-family: var(--body-font);
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+  word-break: break-word;
+}
+.infoImageContent {
+  width: 100%;
+  height: 100%;
+  border: 12px solid #e6e1e5;
+  border-radius: 10px;
+}
+.infoImageContent img {
+  width: 100%;
+  height: 100%;
+}
