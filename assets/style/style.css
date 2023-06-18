@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
 }
+
 :root {
   --header-font: "Nunito", sans-serif;
   --title-font: "Pacifico", "cursive";
@@ -107,8 +108,8 @@ a {
   height: 25px;
   width: 25px;
   border-radius: 50%;
-  left: 41.5px;
-  bottom: 14.5px;
+  left: 43.5px;
+  top: 19.5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -698,8 +699,8 @@ img {
   background-image: url(/assets/Images/About/breadcumb-img.png);
   height: 100%;
   width: 100%;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -726,11 +727,16 @@ img {
 .breadcrumbContentItem nav ol li,
 li a,
 li i {
-  font-size: 19px;
   color: white;
-  font-size: 13px;
+  font-size: 17px;
   display: flex;
   align-items: center;
+}
+.breadcrumbContentItem nav ol li i {
+  margin-right: 5px;
+}
+.breadcrumbContentItemArea {
+  padding-top: 50px;
 }
 .aboutTitle h5 {
   font-family: var(--title-font);
@@ -837,6 +843,7 @@ li i {
 .chooseSectionItem {
   text-align: center;
   margin-bottom: 50px;
+  padding-top: 50px;
 }
 .chooseSectionItem h5 {
   color: white;
@@ -980,3 +987,316 @@ li i {
   filter: grayscale(0.6);
 }
 /*==========Contact End===========*/
+
+/*==========Error Page Start============*/
+.errorContent {
+  padding-top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.errorContent h1 {
+  font-weight: 600;
+  font-size: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444444 !important;
+  margin: 0 !important;
+}
+.errorContent h4 {
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 800;
+}
+.errorContent h6 {
+  color: #7c7c7c !important;
+  font-family: var(--header-font);
+}
+/*===========Error Page End============*/
+/*===========Faq Start==========*/
+.support {
+  background-image: url(/assets/Images/Faq/support01.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.supportContent h2 {
+  color: white;
+  font-family: var(--header-font);
+  font-weight: 700;
+  margin-top: 15px;
+}
+.supportContent h6 {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 18px;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.supportContent h4 {
+  font-family: var(--title-font);
+  font-weight: 500;
+  color: white !important;
+}
+.supportContent button {
+  padding: 14px 20px;
+  border-radius: 50px;
+  background-color: white;
+  color: #804d4e;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 1px solid #804d4e;
+  margin-top: 40px;
+}
+.accordion-item {
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 0 !important;
+  border-radius: 0;
+  margin-bottom: 30px;
+}
+.accordion-flush .accordion-item .accordion-button {
+  border-radius: 0;
+}
+.accordion-item:first-of-type .accordion-button {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+.accordion-button {
+  font-size: 19px !important;
+  font-family: var(--header-font) !important;
+  font-weight: 700;
+}
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+.accordion-body {
+  padding: 0 20px !important;
+}
+.accordion-body .text {
+  max-width: 60%;
+  color: #7c7c7c;
+  font-family: var(--body-font);
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+  word-break: break-word;
+}
+.accordion-button:focus {
+  z-index: 3;
+  /* border-color: none !important; */
+  box-shadow: none !important;
+}
+.accordion-button:hover {
+  z-index: 2;
+}
+.accordion-button:not(.collapsed) {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(/assets/Images/Faq/pngwing.com.png) !important;
+  transform: rotate(-180deg) !important;
+}
+.faqSection li a {
+  margin-right: 10px;
+  background-color: #804d4e;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: white;
+  border: 1px solid #804d4e;
+  transition: 0.3s linear;
+}
+.disable {
+  background-color: transparent !important;
+  color: #000000 !important;
+  border: 1px solid hsl(var(--black) / 0.08) !important;
+}
+.disable:hover {
+  color: #804d4e !important;
+}
+.faqCategoryContent text {
+  max-width: 60%;
+  color: #7c7c7c;
+  font-family: var(--body-font);
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+  word-break: break-word;
+}
+/*===========Faq End==========*/
+
+/*===========Shop Start==========*/
+
+.aside_category h6 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+.aside_category h6::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #804d4e;
+}
+.aside_category ul li {
+  padding-top: 15px !important;
+  font-size: 14px;
+}
+.aside_category ul li span {
+  margin-left: 10px;
+  font-size: 14px;
+  font-family: var(--header-font);
+  color: #804d4e;
+}
+.left_aside {
+  padding: 50px;
+  background-color: rgb(251, 235, 235);
+  border-radius: 5px;
+}
+.sideBarItem {
+  padding-bottom: 55px;
+}
+.sideBarForm {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  min-height: 1.5rem;
+}
+.sideBarForm label {
+  width: calc(100% - 13px);
+  padding-left: 15px;
+  font-size: 14px;
+  color: hsl(var(--black) / 0.9);
+  font-family: var(--body-font);
+  font-weight: 400;
+}
+.sideBarItemBtn{
+  margin-top: 20px;
+}
+.filterPrice h6{
+ font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+}
+.filterPrice h6::before{
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #804d4e;
+}
+.productCardShop {
+  transition: 0.2s;
+  border-radius: 10px;
+  border: 1px solid hsl(var(--black) / 0.09);
+  box-shadow: -20px 10px rgba(0, 69, 172, 0.01);
+  cursor: pointer;
+}
+.productCardShop img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s linear;
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+.productCardShopItem {
+  padding: 15px 0 0 0;
+  cursor: pointer;
+  position: relative;
+}
+.productCardShopItem a {
+  display: inline-block;
+  transition: 0.2s linear;
+  text-decoration: none;
+  color: hsl(var(--body-color));
+}
+.productIconShop i {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+  font-size: 25px;
+  transition: 0.3s;
+  color: rgba(0, 0, 0, 0.537);
+}
+.productCardShop:hover .productIconShop i,
+.productCardShop:hover img {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.prodictClearanceShop {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: #804d4e;
+  border-radius: 30px;
+}
+.prodictClearanceShopItem {
+  font-size: 14px !important;
+  font-family: var(--header-font);
+  font-weight: 600;
+  padding: 3px 10px;
+  line-height: 1;
+  text-align: center;
+}
+.productItemContentShop {
+  padding: 15px 10px 30px 10px;
+}
+.productItemContentShop_item {
+  color: black;
+  font-size: 23px;
+  font-weight: 600;
+  font-family: var(--header-font);
+}
+.starIconShop {
+  color: #804d4e;
+  font-size: 19px;
+}
+.productPrice s {
+  color: #969696;
+  font-weight: 400;
+  font-size: 14px;
+}
+.productPrice {
+  font-size: 18px;
+  font-family: var(--header-font);
+  font-weight: 600;
+}
+.btnProduct {
+  background-color: #804d4e;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 17px;
+  font-family: var(--header-font);
+}
+.btnProduct:hover {
+  color: #804d4e;
+  background-color: white;
+  border: #804d4e 1px solid;
+}
+/*===========Shop End==========*/

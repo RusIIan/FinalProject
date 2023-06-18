@@ -25,29 +25,74 @@
       speed: 1500,
       autoplaySpeed: 2000,
     });
-      $(".customer-logos").slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 1000,
-        autoplaySpeed: 2500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 4,
-            },
+    $(".customer-logos").slick({
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      speed: 1000,
+      autoplaySpeed: 2500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4,
           },
-          {
-            breakpoint: 520,
-            settings: {
-              slidesToShow: 3,
-            },
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3,
           },
-        ],
+        },
+      ],
+    });
+  });
+  $(document).ready(function () {
+    $(".refundCategory").click(function () {
+      $(".returnCategory").removeClass("active");
+      $(".returnCategory").addClass("disable");
+      $(".refundCategory").removeClass("disable");
+      $(".refundCategory").addClass("active");
+      $(".paymentCategory").removeClass("active");
+      $(".paymentCategory").addClass("disable");
+      $(".accoundCategory").removeClass("active");
+      $(".accoundCategory").addClass("disable");
+      // =====================================
+      $(".accoundCategory").click(function () {
+        $(".refundCategory").removeClass("active");
+        $(".refundCategory").addClass("disable");
+        $(".accoundCategory").removeClass("disable");
+        $(".accoundCategory").addClass("active");
+        $(".paymentCategory").removeClass("active");
+        $(".paymentCategory").addClass("disable");
+        $(".returnCategory").removeClass("active");
+        $(".returnCategory").addClass("disable");
       });
+      // ======================================
+       $(".paymentCategory").click(function () {
+         $(".accoundCategory").removeClass("active");
+         $(".accoundCategory").addClass("disable");
+         $(".paymentCategory").removeClass("disable");
+         $(".paymentCategory").addClass("active");
+         $(".refundCategory").removeClass("active");
+         $(".refundCategory").addClass("disable");
+         $(".returnCategory").removeClass("active");
+         $(".returnCategory").addClass("disable");
+       });
+      // ========================================
+         $(".returnCategory").click(function () {
+           $(".returnCategory").removeClass("disable");
+           $(".returnCategory").addClass("active");
+           $(".accoundCategory").removeClass("active");
+           $(".accoundCategory").addClass("disable");
+           $(".paymentCategory").removeClass("active");
+           $(".paymentCategory").addClass("disable");
+           $(".refundCategory").removeClass("active");
+           $(".refundCategory").addClass("disable");
+         });
+    });
   });
 })(jQuery);

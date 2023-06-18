@@ -19,16 +19,20 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                        <nav>
+                        <nav id="navbar">
                             <ul class="navigation">
-                                <li class="navigation-item"><a class="navigation-item-area" href="#">Home</a></li>
-                                <li class="navigation-item"><a class="navigation-item-area" href="#">About</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="Index.html">Home</a>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="About.html">About</a>
+                                </li>
                                 <li class="navigation-item"><a class="navigation-item-area  navigationPages"
-                                        href="#">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                                        href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
                                     <ul class="submenu">
                                         <li class="submenuItem "><a class="submenuItem-area"
-                                                href="#">ProductCategory</a></li>
-                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Checkout</a></li>
+                                                href="#">ProductCategory</a>
+                                        </li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="Faq.html">Faq</a>
+                                        </li>
                                         <li class="submenuItem "><a class="submenuItem-area" href="#">Login</a></li>
                                         <li class="submenuItem "><a class="submenuItem-area" href="#">Registration</a>
                                         </li>
@@ -37,7 +41,9 @@
                                     </ul>
                                 </li>
                                 <li class="navigation-item"><a class="navigation-item-area" href="#">Blog</a></li>
-                                <li class="navigation-item"><a class="navigation-item-area" href="#">Contact</a></li>
+                                <li class="navigation-item"><a class="navigation-item-area"
+                                        href="Contact.html">Contact</a>
+                                </li>
                                 <li class="navigation-item"><i
                                         class="navigation-item-area-icon-serach fa-solid fa-magnifying-glass"></i></li>
                             </ul>
@@ -57,44 +63,374 @@
             </div>
         </section>
         <!-- <section id="MobileNavbar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="menu">
-                            <nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="menu">
+                                <nav>
+                                    <ul>
+                                        <li><a href="#">Главная</a></li>
+                                        <li><a href="#">О нас</a></li>
+                                        <li><a href="#">Услуги</a></li>
+                                        <li><a href="#">Контакты</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobilBasketCatrRegister">
                                 <ul>
-                                    <li><a href="#">Главная</a></li>
-                                    <li><a href="#">О нас</a></li>
-                                    <li><a href="#">Услуги</a></li>
-                                    <li><a href="#">Контакты</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="mobilBasketCatrRegister">
-                            <ul>
-                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                                <li><a href="#" class="cartCount"><span class="cartCountItem">12</span><i
-                                            class="fa-solid fa-cart-shopping"></i></a></li>
-                                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
-                            </ul> 
-                            <div class="menuBtn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                    <li><a href="#" class="cartCount"><span class="cartCountItem">12</span><i
+                                                class="fa-solid fa-cart-shopping"></i></a></li>
+                                    <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                                </ul> 
+                                <div class="menuBtn">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section> -->
+            </section> -->
     </header>
     <!-- Header End -->
 
     <!-- Main Start -->
     <main>
         <section>
-            <div class="main">
-                    <h1>Hello it's Shop page</h1>         
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-xsm-3 col-3">
+                        <div class="left_aside">
+                            <div class="aside_category">
+                                <h6>Category</h6>
+                                <div class="sideBarItem">
+                                    <div class="sideBarForm">
+                                        <input type="checkbox" name="#" id="#">
+                                        <label for="#">Cad Food</label>
+                                    </div>
+                                    <div class="sideBarForm">
+                                        <input type="checkbox" name="#" id="#">
+                                        <label for="#">Accessories</label>
+                                    </div>
+                                    <div class="sideBarForm">
+                                        <input type="checkbox" name="#" id="#">
+                                        <label for="#">Dog Food</label>
+                                    </div>
+                                    <div class="sideBarForm">
+                                        <input type="checkbox" name="#" id="#">
+                                        <label for="#">Small Animal</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filterPrice">
+                                <h6>Filter by Price</h6>
+                            </div>
+                            <div class="sideBarItem">
+                                <input type="range" name="#" id="#">
+                                <label for="#">Price range:</label>
+                                <div class="sideBarItemBtn">
+                                    <a href="#" class="btnProduct">Filter</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-xsm-9 col-9">
+                        <div class="row justify-content-center">
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
+                                <div class="productCardShop text-center mb-5 ">
+                                    <div class="productCardShopItem mt-3 mb-2">
+                                        <a href="Shop.html">
+                                            <img src="assets/Images/Product/product01.png" alt="Product">
+                                        </a>
+                                        <div class="productIconShop">
+                                            <span>
+                                                <i class="fa-regular fa-heart"></i>
+                                            </span>
+                                        </div>
+                                        <div class="prodictClearanceShop">
+                                            <span class="badge prodictClearanceShopItem">Sale</span>
+                                        </div>
+                                    </div>
+                                    <div class="productItemContentShop">
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star-half-stroke"></i></li>
+                                        </ul>
+                                        <h6 class="productPriceShop mb-3">
+                                            <s>$200</s>
+                                            $100
+                                        </h6>
+                                        <a href="" class="btnProduct">Add to Cart</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </section>
     </main>
