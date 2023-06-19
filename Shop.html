@@ -116,139 +116,176 @@
         <section>
             <div class="container">
                 <div class="row mt-5">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-xsm-3 col-3">
-                        <div class="left_aside">
-                            <div class="titleShop">
-                                <h6>Category</h6>
-                                <div class="sideBarItem">
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Cad-Food" id="Cad-Food">
-                                        <label for="Cad-Food">Cad Food</label>
-                                    </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Accessories" id="Accessories">
-                                        <label for="Accessories">Accessories</label>
-                                    </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Dog-Food" id="Dog-Food">
-                                        <label for="Dog-Food">Dog Food</label>
-                                    </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Small-Animal" id="Small-Animal">
-                                        <label for="Small-Animal">Small Animal</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="titleShop">
-                                <h6>Filter by Price</h6>
-                            </div>
-                            <div class="sideBarItem">
-                                <input type="range" name="#" id="#">
-                                <label for="#">Price range:</label>
-                                <div class="sideBarItemBtn">
-                                    <a href="#" class="btnProduct">Filter</a>
-                                </div>
-                            </div>
-                            <div class="titleShop">
-                                <h6>Color</h6>
-                            </div>
-                            <div class="sideBarItem">
-                                <div class="sideBarForm">
-                                    <input type="checkbox" name="Red" id="Red">
-                                    <label for="Red">Red(250)</label>
-                                </div>
-                                <div class="sideBarForm">
-                                    <input type="checkbox" name="Green" id="Green">
-                                    <label for="Green">Green(85)</label>
-                                </div>
-                                <div class="sideBarForm">
-                                    <input type="checkbox" name="Violet" id="Violet">
-                                    <label for="Violet">Violet(10)</label>
-                                </div>
-                                <div class="sideBarForm">
-                                    <input type="checkbox" name="Blue" id="Blue">
-                                    <label for="Blue">Blue(50)</label>
-                                </div>
-                                <div class="sideBarForm">
-                                    <input type="checkbox" name="Black" id="Black">
-                                    <label for="Black">Black(25)</label>
-                                </div>
-                            </div>
-                            <div class="titleShop">
-                                <h6>Best Seller</h6>
-                            </div>
-                            <div class="sideBarItem">
-                                <div class="bestProduct">
-                                    <a href="#" class="bestProductLink">
-                                        <img src="/assets/Images/Product/product02.png" alt="Dog Food">
-                                    </a>
-                                    <div class="bestProducTitle">
-                                        <a href="#" class="bestProductTitleItem">
-                                            Impulse Duffle
-                                        </a>
-                                        <h6 class="bestProductPrice">
-                                            <s>$250</s>
-                                            <span class="bestProductPriceNew">$150</span>
-                                        </h6>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-xsm-3 col-3 leftSidebar">
+                        <div class="row">
+                            <div class="left_aside">
+                                <span class="closeIcon"><i class="fa-solid fa-xmark"></i></span>
+                                <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-xsm-11 col-12 m-auto">
+                                    <div class="titleShop">
+                                        <h6>Category</h6>
+                                        <div class="sideBarItem">
+                                            <div class="sideBarForm">
+                                                <input type="checkbox" name="Cad-Food" id="Cad-Food">
+                                                <label for="Cad-Food">Cad Food</label>
+                                            </div>
+                                            <div class="sideBarForm">
+                                                <input type="checkbox" name="Accessories" id="Accessories">
+                                                <label for="Accessories">Accessories</label>
+                                            </div>
+                                            <div class="sideBarForm">
+                                                <input type="checkbox" name="Dog-Food" id="Dog-Food">
+                                                <label for="Dog-Food">Dog Food</label>
+                                            </div>
+                                            <div class="sideBarForm">
+                                                <input type="checkbox" name="Small-Animal" id="Small-Animal">
+                                                <label for="Small-Animal">Small Animal</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bestProduct">
-                                    <a href="#" class="bestProductLink">
-                                        <img src="/assets/Images/Product/product03.png" alt="Dog Food">
-                                    </a>
-                                    <div class="bestProducTitle">
-                                        <a href="#" class="bestProductTitleItem">
-                                            Impulse Duffle
-                                        </a>
-                                        <h6 class="bestProductPrice">
-                                            <s>$250</s>
-                                            <span class="bestProductPriceNew">$150</span>
-                                        </h6>
+                                <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-xsm-11 col-12 m-auto">
+                                    <div class="titleShop">
+                                        <h6>Filter by Price</h6>
+                                    </div>
+                                    <div class="sideBarItem">
+                                        <div class="wrapper">
+                                            <fieldset class="filter-price">
+                                                <div class="price-field">
+                                                    <input type="range" min="100" max="500" value="100" id="lower">
+                                                    <input type="range" min="100" max="500" value="500" id="upper">
+                                                </div>
+                                                <div class="price-wrap">
+                                                    <span class="price-title">Price Filter</span>
+                                                    <div class="price-wrap-1">
+                                                        <input id="one">
+                                                        <label for="one">$</label>
+                                                    </div>
+                                                    <div class="price-wrap_line">-</div>
+                                                    <div class="price-wrap-2">
+                                                        <input id="two">
+                                                        <label for="two">$</label>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </div>
+                                        <div class="sideBarItemBtn">
+                                            <a href="#" class="btnProduct">Filter</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bestProduct">
-                                    <a href="#" class="bestProductLink">
-                                        <img src="/assets/Images/Product/product04.png" alt="Dog Food">
-                                    </a>
-                                    <div class="bestProducTitle">
-                                        <a href="#" class="bestProductTitleItem">
-                                            Impulse Duffle
-                                        </a>
-                                        <h6 class="bestProductPrice">
-                                            <s>$250</s>
-                                            <span class="bestProductPriceNew">$150</span>
-                                        </h6>
+                                <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-xsm-11 col-12 m-auto">
+                                    <div class="titleShop">
+                                        <h6>Color</h6>
+                                    </div>
+                                    <div class="sideBarItem">
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Red" id="Red">
+                                            <label for="Red">Red(250)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Green" id="Green">
+                                            <label for="Green">Green(85)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Violet" id="Violet">
+                                            <label for="Violet">Violet(10)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Blue" id="Blue">
+                                            <label for="Blue">Blue(50)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Black" id="Black">
+                                            <label for="Black">Black(25)</label>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="titleShop">
-                                <h6>Brand</h6>
-                                <div class="sideBarItem">
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Red-bran" id="Red-bran">
-                                        <label for="Red-bran">Red(250)</label>
+                                <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-xsm-11 col-12 m-auto">
+                                    <div class="titleShop">
+                                        <h6>Best Seller</h6>
                                     </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="PetClub" id="PetClub">
-                                        <label for="PetClub">PetClub(5)</label>
+                                    <div class="sideBarItem">
+                                        <div class="bestProduct">
+                                            <a href="#" class="bestProductLink">
+                                                <img src="/assets/Images/Product/product02.png" alt="Dog Food">
+                                            </a>
+                                            <div class="bestProducTitle">
+                                                <a href="#" class="bestProductTitleItem">
+                                                    Impulse Duffle
+                                                </a>
+                                                <h6 class="bestProductPrice">
+                                                    <s>$250</s>
+                                                    <span class="bestProductPriceNew">$150</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="bestProduct">
+                                            <a href="#" class="bestProductLink">
+                                                <img src="/assets/Images/Product/product03.png" alt="Dog Food">
+                                            </a>
+                                            <div class="bestProducTitle">
+                                                <a href="#" class="bestProductTitleItem">
+                                                    Impulse Duffle
+                                                </a>
+                                                <h6 class="bestProductPrice">
+                                                    <s>$250</s>
+                                                    <span class="bestProductPriceNew">$150</span>
+                                                </h6>
+                                            </div>
+                                        </div>
+                                        <div class="bestProduct">
+                                            <a href="#" class="bestProductLink">
+                                                <img src="/assets/Images/Product/product04.png" alt="Dog Food">
+                                            </a>
+                                            <div class="bestProducTitle">
+                                                <a href="#" class="bestProductTitleItem">
+                                                    Impulse Duffle
+                                                </a>
+                                                <h6 class="bestProductPrice">
+                                                    <s>$250</s>
+                                                    <span class="bestProductPriceNew">$150</span>
+                                                </h6>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Brothers" id="Brothers">
-                                        <label for="Brothers">Brothers(9)</label>
+                                </div>
+                                <div class="col-xxl-11 col-xl-11 col-lg-11 col-md-11 col-xsm-11 col-12 m-auto">
+                                    <div class="titleShop">
+                                        <h6>Brand</h6>
                                     </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Cat-brand" id="Cat-brand">
-                                        <label for="CatCat-brandb">Cat(3)</label>
-                                    </div>
-                                    <div class="sideBarForm">
-                                        <input type="checkbox" name="Pet-Point" id="Pet-Point">
-                                        <label for="Pet-Point">Pet Point(66)</label>
+                                    <div class="sideBarItem">
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Red-bran" id="Red-bran">
+                                            <label for="Red-bran">Red(250)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="PetClub" id="PetClub">
+                                            <label for="PetClub">PetClub(5)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Brothers" id="Brothers">
+                                            <label for="Brothers">Brothers(9)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Cat-brand" id="Cat-brand">
+                                            <label for="CatCat-brandb">Cat(3)</label>
+                                        </div>
+                                        <div class="sideBarForm">
+                                            <input type="checkbox" name="Pet-Point" id="Pet-Point">
+                                            <label for="Pet-Point">Pet Point(66)</label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-xsm-9 col-9">
+                    <div class="col-xxl-9 col-xl-9 col-lg-9 col-md-11 col-xsm-6 col-12 m-auto">
+                        <div class="product-sidebar-filter d-lg-none d-block">
+                            <button class="product-sidebar-filter__button">
+                                <i class="fa-solid fa-filter"></i>
+                                <span class="text"> Filter </span>
+                            </button>
+                        </div>
                         <div class="row justify-content-center">
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xsm-6">
                                 <div class="productCardShop text-center mb-5 ">
@@ -266,7 +303,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -298,7 +336,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -330,7 +369,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -362,7 +402,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -394,7 +435,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -426,7 +468,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -458,7 +501,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -490,7 +534,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -522,7 +567,8 @@
                                         </div>
                                     </div>
                                     <div class="productItemContentShop">
-                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten Milk</a>
+                                        <a href="Shop.html" class="productItemContentShop_item">Coco Kat Kitten
+                                            Milk</a>
                                         <ul class="d-flex justify-content-center align-items-center starIconShop mb-2">
                                             <li><i class="fa-solid fa-star"></i></li>
                                             <li><i class="fa-solid fa-star"></i></li>
@@ -561,8 +607,8 @@
                             </div>
                         </div>
                     </div>
-                    
                 </div>
+            </div>
             </div>
         </section>
     </main>

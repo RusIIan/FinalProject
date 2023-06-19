@@ -1134,7 +1134,11 @@ button:focus:not(:focus-visible) {
 /*===========Faq End==========*/
 
 /*===========Shop Start==========*/
-
+@media screen and (max-width: 1000px) {
+  .leftSidebar {
+    display: none;
+  }
+}
 .aside_category ul li {
   padding-top: 15px !important;
   font-size: 14px;
@@ -1146,6 +1150,7 @@ button:focus:not(:focus-visible) {
   color: #804d4e;
 }
 .left_aside {
+  position: relative;
   padding: 50px;
   background-color: rgb(251, 235, 235);
   border-radius: 5px;
@@ -1200,22 +1205,22 @@ button:focus:not(:focus-visible) {
   font-family: var(--body-font);
   font-weight: 400;
 }
-.bestProductPriceNew{
+.bestProductPriceNew {
   color: hsl(var(--black));
 }
-.paginationBody{
+.paginationBody {
   display: flex;
   justify-content: center;
 }
-.page-link{
+.page-link {
   color: #804d4e !important;
 }
 .page-link:focus {
-    z-index: 3;
-    color: #0a58ca;
-    background-color: #e9ecef;
-    outline: 0;
-    box-shadow: none !important;
+  z-index: 3;
+  color: #0a58ca;
+  background-color: #e9ecef;
+  outline: 0;
+  box-shadow: none !important;
 }
 .titleShop h6 {
   font-size: 18px;
@@ -1330,4 +1335,223 @@ img {
   background-color: white;
   border: #804d4e 1px solid;
 }
+
+/*=======Filter Price Start=====*/
+
+.filter-price {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.price-title {
+  position: relative;
+  font-family: var(--header-font);
+  font-weight: 600 !important;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+.price-field {
+  position: relative;
+  width: 100%;
+  height: 15px;
+  box-sizing: border-box;
+}
+
+.price-field input[type="range"] {
+  position: absolute;
+}
+
+/* Reset style for input range */
+
+.price-field input[type="range"] {
+  width: 188px;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none;
+  -webkit-appearance: none;
+  background: #804d4e;
+}
+
+.price-field input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.price-field input[type="range"]:active,
+.price-field input[type="range"]:focus {
+  outline: 0;
+}
+
+.price-field input[type="range"]::-ms-track {
+  width: 188px;
+  height: 2px;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  pointer-events: none;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+  border-radius: 5px;
+}
+
+/* Style toddler input range */
+
+.price-field input[type="range"]::-webkit-slider-thumb {
+  /* WebKit/Blink */
+  position: relative;
+  -webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -4px;
+  background-color: #fff;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.price-field input[type="range"]::-moz-range-thumb {
+  /* Firefox */
+  position: relative;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -5px;
+  background-color: #fff;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+.price-field input[type="range"]::-ms-thumb {
+  /* IE */
+  position: relative;
+  appearance: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+  margin-top: -5px;
+  background-color: #fff;
+  cursor: pointer;
+  cursor: pointer;
+  pointer-events: all;
+  z-index: 100;
+}
+
+/* Style for input value block */
+
+.price-wrap {
+  display: flex;
+  color: #7c7c7c;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.price-wrap-1,
+.price-wrap-2 {
+  display: flex;
+}
+
+.price-title {
+  margin-right: 5px;
+}
+
+.price-wrap_line {
+  margin: 0 10px;
+}
+
+.price-wrap #one,
+.price-wrap #two {
+  width: 30px;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+  background: 0;
+  border: 0;
+  outline: 0;
+  color: #804d4e;
+  font-family: "Karla", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+}
+
+.price-wrap label {
+  text-align: right;
+}
+
+/* Style for active state input */
+
+.price-field input[type="range"]:hover::-webkit-slider-thumb {
+  box-shadow: 0 0 0 0.5px #fff;
+  transition-duration: 0.3s;
+}
+
+.price-field input[type="range"]:active::-webkit-slider-thumb {
+  box-shadow: 0 0 0 0.5px #fff;
+  transition-duration: 0.3s;
+}
+/*=======Filter Price End=====*/
+/*==========Product Sidebar Start=======*/
+.product-sidebar-filter {
+  text-align: right;
+  margin-bottom: 30px;
+}
+.product-sidebar-filter__button {
+  background-color: #804d4e;
+  padding: 10px 20px;
+  line-height: 1;
+  display: inline-block;
+  border-radius: 5px;
+  transition: 0.2s linear;
+  border: transparent;
+}
+.product-sidebar-filter__button .text {
+  font-size: 25px;
+  color: white;
+  font-family: var(--header-font);
+  font-style: italic;
+  font-weight: 500;
+}
+.fa-filter{
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+.closeIcon{
+    color: hsl(var(--black));
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #804d4e7a;
+    background-color: #804d4e7a;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+/*==========Product Sidebar End=======*/
 /*===========Shop End==========*/
