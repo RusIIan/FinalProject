@@ -27,19 +27,22 @@ li {
 a {
   text-decoration: none !important;
 }
+body {
+  background: #fafcff;
+}
 /*==========Scroll Start========*/
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #804d4e; 
+  background: #804d4e;
   border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #b30000;
 }
 /*======Scroll end======== */
 /* Navbar start  */
@@ -1172,8 +1175,9 @@ button:focus:not(:focus-visible) {
 .left_aside {
   position: relative;
   padding: 50px;
-  background-color: rgb(251, 235, 235);
+  background-color: rgb(255, 255, 255);
   border-radius: 5px;
+  box-shadow: 0px 0px 2px hsl(var(--black) / 0.5);
 }
 .sideBarItem {
   padding-bottom: 55px;
@@ -1595,3 +1599,42 @@ img {
 }
 /*==========Product Sidebar End=======*/
 /*===========Shop End==========*/
+
+/*=====Blog Post Start=======*/
+.blogSerach {
+  max-width: 100%;
+  position: relative;
+}
+.blogEmailAddress {
+  width: 100%;
+  padding: 12px;
+  border-radius: 50px;
+  border: transparent;
+  background-color: #f1eff2;
+  color: #7c7c7c;
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.8;
+  line-height: 1;
+  font-family: var(--header-font);
+}
+.blogButton {
+  position: absolute;
+  right: 0px;
+  top: 2px;
+  border:transparent;
+  height: 40px;
+  width: 60px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  background: transparent;
+}
+.sideBarForm a {
+  width: calc(100% - 13px);
+  font-size: 17px;
+  color: hsl(var(--black) / 0.9);
+  font-family: var(--header-font);
+  font-weight: 500;
+  color: #444444;
+}
+/*=====Blog Post End=======*/
