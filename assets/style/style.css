@@ -27,7 +27,21 @@ li {
 a {
   text-decoration: none !important;
 }
-
+/*==========Scroll Start========*/
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #804d4e; 
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+/*======Scroll end======== */
 /* Navbar start  */
 #Navigation {
   background-color: #804d4e;
@@ -1138,6 +1152,12 @@ button:focus:not(:focus-visible) {
   .leftSidebar {
     display: none;
   }
+  .product-sidebar-filter {
+    display: block !important;
+  }
+}
+.product-sidebar-filter {
+  display: none;
 }
 .aside_category ul li {
   padding-top: 15px !important;
@@ -1464,6 +1484,7 @@ img {
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 600;
+  width: 200px;
 }
 
 .price-wrap-1,
@@ -1485,14 +1506,12 @@ img {
   text-align: right;
   margin: 0;
   padding: 0;
-  margin-right: 2px;
   background: 0;
   border: 0;
   outline: 0;
   color: #804d4e;
-  font-family: "Karla", "Arial", sans-serif;
+  font-family: var(--header-font);
   font-size: 14px;
-  line-height: 1.2em;
   font-weight: 400;
 }
 
@@ -1533,25 +1552,46 @@ img {
   font-style: italic;
   font-weight: 500;
 }
-.fa-filter{
+.fa-filter {
   font-size: 25px;
   font-weight: 600;
   color: white;
 }
-.closeIcon{
-    color: hsl(var(--black));
+.closeIcon {
+  color: hsl(var(--black));
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid #804d4e7a;
+  background-color: #804d4e7a;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+@media screen and (min-width: 280px) and (max-width: 1000.5px) {
+  .sidebarMobil {
+    display: block !important;
+  }
+  #sidebar {
+    background: #2c3e50;
     position: absolute;
-    right: 10px;
-    top: 10px;
-    border: 1px solid #804d4e7a;
-    background-color: #804d4e7a;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    border-radius: 50%;
-    transition: 0.2s linear;
-    cursor: pointer;
+    height: 100%;
+    top: 0;
+    left: -300px;
+    transition: left 0.5s ease;
+    z-index: 2;
+  }
+  #sidebar.visible {
+    left: 0px;
+    transition: left 0.7s ease;
+  }
+}
+.sidebarMobil {
+  display: none;
 }
 /*==========Product Sidebar End=======*/
 /*===========Shop End==========*/

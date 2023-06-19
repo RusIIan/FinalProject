@@ -1,12 +1,9 @@
 var lowerSlider = document.querySelector("#lower");
 var upperSlider = document.querySelector("#upper");
-
 document.querySelector("#two").value = upperSlider.value;
 document.querySelector("#one").value = lowerSlider.value;
-
 var lowerVal = parseInt(lowerSlider.value);
 var upperVal = parseInt(upperSlider.value);
-
 upperSlider.oninput = function () {
   lowerVal = parseInt(lowerSlider.value);
   upperVal = parseInt(upperSlider.value);
@@ -31,6 +28,19 @@ lowerSlider.oninput = function () {
   }
   document.querySelector("#one").value = this.value;
 };
+// filter Price End
+// Sidebar start
+const filter = document.getElementById("sidebar-btn")
+const sidebar = document.getElementById("sidebar")
+const closesidebar = document.getElementById("closeSidebar")
+  
+filter.addEventListener('click', e => {
+  sidebar.classList.add('visible')
+});
+closesidebar.addEventListener('click', e => {
+  sidebar.classList.remove('visible')
+});
+// sidebar end
 (function ($) {
   $(document).ready(function () {
     $(".testimonial-slick-slider").slick({
