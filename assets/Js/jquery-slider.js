@@ -50,6 +50,7 @@
       ],
     });
   });
+
   $(document).ready(function () {
     $(".refundCategory").click(function () {
       $(".returnCategory").removeClass("active");
@@ -95,4 +96,5 @@
       });
     });
   });
+
 })(jQuery);

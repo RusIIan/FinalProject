@@ -741,13 +741,16 @@ img {
   font-family: var(--header-font);
   font-size: 50px;
 }
-.breadcrumbContentItem nav ol li,
-li a,
-li i {
+.breadcrumbContentItem .breadcrumb .breadcrumbItem .breadcrumbArea,
+.breadcrumbArea a,
+.breadcrumbArea i {
   color: white;
   font-size: 17px;
   display: flex;
   align-items: center;
+}
+.breadcrumbArea a:hover {
+  color: #fff;
 }
 .breadcrumbContentItem nav ol li i {
   margin-right: 5px;
@@ -1577,9 +1580,6 @@ img {
   .sidebarMobil {
     display: block !important;
   }
-  /* .left_aside{
-    width: 0%;
-  } */
   #sidebar {
     background-color: #ad6f6f;
     position: absolute;
@@ -1617,7 +1617,7 @@ img {
   font-family: var(--header-font);
   font-size: 16px;
 }
-.blog-postContent span {
+.blog-postContent .blog-postContent-Item {
   color: #787878;
   font-weight: 400;
   font-family: var(--body-font);
@@ -1776,91 +1776,156 @@ img {
   box-shadow: -20px 10px rgba(0, 69, 172, 0.01);
   cursor: pointer;
 }
-.productCardShop img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: 0.3s linear;
-}
-img {
-  max-width: 100%;
-  vertical-align: middle;
-}
-.productCardShopItem {
-  padding: 15px 0 0 0;
-  cursor: pointer;
-  position: relative;
-}
-.productCardShopItem a {
-  display: inline-block;
-  transition: 0.2s linear;
-  text-decoration: none;
-  color: hsl(var(--body-color));
-}
-.productIconShop i {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  right: 25px;
-  bottom: 0px;
+
+.blog-checkour-main {
+  width: 65%;
+  margin: 50px auto 50px auto;
   font-size: 25px;
-  transition: 0.3s;
-  color: rgba(0, 0, 0, 0.537);
+  color: #767676;
+  flex-wrap: 500;
+  font-family: var(--body-font);
+  background-image: url(/assets/Images/Blog/quote01.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  line-height: 44px;
 }
-.productCardShop:hover .productIconShop i,
-.productCardShop:hover img {
-  visibility: visible;
-  opacity: 1;
-  transition: 0.3s;
-  transform: scale(1.2);
-  cursor: pointer;
-}
-.prodictClearanceShop {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  background-color: #804d4e;
-  border-radius: 30px;
-}
-.prodictClearanceShopItem {
-  font-size: 14px !important;
+
+.blogDetailsArea {
   font-family: var(--header-font);
-  font-weight: 600;
-  padding: 3px 10px;
-  line-height: 1;
-  text-align: center;
-}
-.productItemContentShop {
-  padding: 15px 10px 30px 10px;
-}
-.productItemContentShop_item {
-  color: black;
-  font-size: 23px;
-  font-weight: 600;
-  font-family: var(--header-font);
-}
-.starIconShop {
-  color: #804d4e;
-  font-size: 19px;
-}
-.productPrice s {
-  color: #969696;
   font-weight: 400;
-  font-size: 14px;
+  color: #767676;
 }
-.productPrice {
-  font-size: 18px;
+.blogDetailsList .blogDetailsListItem .blogDetailsListArea i {
+  margin-right: 15px;
+}
+.blogDetailsListArea i {
+  color: #804d4e;
+}
+.blogDetailsListArea span {
   font-family: var(--header-font);
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 400;
 }
-.btnProduct {
+.blogDetails-link-content-item li i {
+  color: #804d4e;
+  margin-right: 20px;
+  background-color: #e8e1e5;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.blogDetails-link-content-item,
+.blogDetails-link-content-area {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.blog-details-link-area {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: var(--header-font);
+  margin-right: 15px;
+}
+.blogComment {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid hsl(var(--black) / 0.1);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.blogCommentItem img {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+.blogCommentItem {
+  width: calc(100% - 80px);
+  padding-left: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+.blogCommentItemArea {
+  font-size: 19px;
+  font-weight: 700;
+  font-family: var(--header-font);
+  color: black !important;
+  margin-bottom: 5px;
+}
+.blogComentProfilPhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.commentTitle h6 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 15px;
+  font-family: var(--header-font);
+}
+.commentTitle h6::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 2px;
+  background-color: #804d4e;
+}
+.blogCommentData {
+  color: #7c7c7c;
+}
+.commentReplyText {
+  color: hsl(var(--black) / 0.9);
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s linear;
+  font-family: var(--body-font);
+}
+.commentReplyText:hover{
+  color: #804d4e;
+  transition: 0.2s linear;
+}
+.commentReplyDesc{
+  font-size: 16px;
+  color: #7c7c7c;
+  font-family: var(--header-font);
+}
+.commentList{
+  margin-left: 70px !important;
+}
+.required{
+  color:#d00202 ;
+}
+.commentformItem label {
+  font-size: 18px;
+  color: black;
+  font-family: var(--header-font);
+  margin: 15px 0;
+}
+.commentformItem input {
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: 1px solid hsl(var(--black) / 0.09);
+}
+.commentformItem textarea {
+  padding: 15px 20px;
+  border-radius: 15px;
+  border: 1px solid hsl(var(--black) / 0.09);
+}
+.commentBtn {
+  padding: 15px 20px;
+  border-radius: 50px;
   background-color: #804d4e;
   color: white;
-  padding: 8px 20px;
-  border-radius: 50px;
-  font-size: 17px;
-  font-family: var(--header-font);
+  border: transparent;
 }
-/*=====Blog Post End=======*/
-
 /*=====Blog Post End=======*/
