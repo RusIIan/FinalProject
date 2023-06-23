@@ -976,6 +976,9 @@ img {
   border-radius: 15px;
   border: 1px solid hsl(var(--black) / 0.09);
 }
+.contactItem input:focus {
+  outline: none;
+}
 .contactItem textarea {
   padding: 15px 20px;
   border-radius: 15px;
@@ -1890,20 +1893,20 @@ img {
   transition: 0.2s linear;
   font-family: var(--body-font);
 }
-.commentReplyText:hover{
+.commentReplyText:hover {
   color: #804d4e;
   transition: 0.2s linear;
 }
-.commentReplyDesc{
+.commentReplyDesc {
   font-size: 16px;
   color: #7c7c7c;
   font-family: var(--header-font);
 }
-.commentList{
+.commentList {
   margin-left: 70px !important;
 }
-.required{
-  color:#d00202 ;
+.required {
+  color: #d00202;
 }
 .commentformItem label {
   font-size: 18px;
@@ -1929,3 +1932,99 @@ img {
   border: transparent;
 }
 /*=====Blog Post End=======*/
+
+/*=====Check Out Start=====*/
+.checOutContent {
+  padding: 15px;
+  background-color: #fbfbfb;
+  border-radius: 5px;
+  box-shadow: 0px 0px 1px hsl(var(--black) / 0.5);
+  margin: 80px 0 80px 0;
+}
+.checkoutTitle {
+  font-family: var(--header-font);
+}
+.countrySelectForm label {
+  font-size: 16px;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.countrySelectForm select {
+  width: 100%;
+  padding: 15px 0 15px 20px;
+  border-radius: 15px;
+  border: 1px solid hsl(var(--black) / 0.09);
+  cursor: pointer;
+  font-size: 15px;
+  color: #949494;
+}
+.countrySelectForm select:focus {
+  outline: none;
+}
+.firstAndLastNameSectionForm label {
+  font-size: 16px;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.addressSectionFrom label {
+  font-size: 16px;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.addressSectionFrom input {
+  font-size: 15px;
+  color: #949494;
+}
+.cityAndPostalCodeSectionForm label {
+  font-size: 16px;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.cityAndPostalCodeSectionForm input {
+  font-size: 15px;
+  color: #949494;
+}
+.phoneNumberAndEmailAddressSectionForm label {
+  font-size: 16px;
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+.differentAddressSectionFrom .checkForm:checked {
+  background-color: hsl(var(--base)) !important;
+  border-color: hsl(var(--base)) !important;
+}
+.differentAddressSectionFrom {
+  position: relative;
+}
+.differentAddressSectionFrom:checked::before {
+  position: absolute;
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: hsl(var(--white));
+  font-size: 11px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.checOutSectioBtnFrom .checkOutBtn {
+  padding: 16px 20px;
+  border-radius: 50px;
+  background-color: #804d4e;
+  color: white;
+  border: transparent;
+  font-size: 18px;
+  font-weight: 600;
+}
+.checkOutReturn,
+.checkOutReturn:hover {
+  color: #804d4e;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: var(--header-font);
+}
+/*=====Check Out End=====*/
