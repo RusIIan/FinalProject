@@ -121,8 +121,8 @@
         <!--=============Check Out Start=============-->
         <section id="checkout">
             <div class="container">
-                <div class="row">
-                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 m-auto">
+                <div class="row gy-5 mt-5 mb-5 ">
+                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
                         <div class="checOutContent">
                             <h4 class="checkoutTitle">Biling Details</h4>
                             <form action="#">
@@ -138,13 +138,13 @@
                                 <div class="firstAndLastNameSectionForm mb-3">
                                     <div class="row">
                                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="contactItem d-flex flex-column">
+                                            <div class="checkInput d-flex flex-column">
                                                 <label for="#">First Name <span class="required">*</span></label>
                                                 <input type="text">
                                             </div>
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="contactItem d-flex flex-column">
+                                            <div class="checkInput d-flex flex-column">
                                                 <label for="#">Last Name <span class="required">*</span></label>
                                                 <input type="text">
                                             </div>
@@ -152,7 +152,7 @@
                                     </div>
                                 </div>
                                 <div class="addressSectionFrom mb-3">
-                                    <div class="contactItem d-flex flex-column">
+                                    <div class="checkInput d-flex flex-column">
                                         <label for="#">Address<span class="required">*</span></label>
                                         <input type="text" placeholder="House number and street name">
                                     </div>
@@ -160,13 +160,13 @@
                                 <div class="cityAndPostalCodeSectionForm mb-3">
                                     <div class="row">
                                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="contactItem d-flex flex-column">
+                                            <div class="checkInput d-flex flex-column">
                                                 <label for="#">City</label>
                                                 <input type="text" placeholder="Choose City">
                                             </div>
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="contactItem d-flex flex-column">
+                                            <div class="checkInput d-flex flex-column">
                                                 <label for="#">Postal code</label>
                                                 <input type="text" placeholder="Ex 123">
                                             </div>
@@ -176,13 +176,13 @@
                                 <div class="phoneNumberAndEmailAddressSectionForm mb-3">
                                     <div class="row">
                                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="contactItem d-flex flex-column">
+                                            <div class="checkInput d-flex flex-column">
                                                 <label for="#">Phone Number</label>
                                                 <input type="number">
                                             </div>
                                         </div>
                                         <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-                                            <div class="contactItem d-flex flex-column">
+                                            <div class="checkInput d-flex flex-column">
                                                 <label for="#">Email Address</label>
                                                 <input type="text">
                                             </div>
@@ -190,24 +190,104 @@
                                     </div>
                                 </div>
                                 <div class="differentAddressSectionFrom mb-3">
-                                    <label for="differentAddress">Ship to a different address?</label>
                                     <input type="checkbox" name="#" class="checkForm" id="differentAddress" checked>
+                                    <label for="differentAddress">Ship to a different address?</label>
                                 </div>
                                 <div class="orderNotesSectionFrom mb-4">
-                                    <div class="contactItem d-flex flex-column">
+                                    <div class="checkInput d-flex flex-column">
                                         <label for="#">Order notes (optional)</label>
                                         <textarea type="text" placeholder="Type your note"></textarea>
                                     </div>
                                 </div>
                                 <div class="checOutSectioBtnFrom">
-                                        <input type="submit" value="CONTINUE SHOPPING" class="checkOutBtn">
-                                        <a href="#" class="checkOutReturn ms-5">Return to cart</a>
+                                    <input type="submit" value="CONTINUE SHOPPING" class="checkOutBtn">
+                                    <a href="#" class="checkOutReturn ms-5">Return to cart</a>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 m-auto">
-                        <h4 class="checkoutTitle">Your Order</h4>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-5">
+                        <div class="checOutContent">
+                            <h4 class="checkoutTitle">Your Order</h4>
+                            <form action="#">
+
+                                <div class="order d-flex justify-content-between align-items-center">
+                                    <ul>
+                                        <li><span class="orderName">Coco Kat Kitten</span></li>
+                                        <li><span class="orderName">Milk X 02</span></li>
+                                    </ul>
+                                    <span class="orderPrice">$280.00</span>
+                                </div>
+                                <div class="order d-flex justify-content-between align-items-center">
+                                    <ul>
+                                        <li><span class="orderName">Coco Kat Kitten</span></li>
+                                        <li><span class="orderName">Milk X 02</span></li>
+                                    </ul>
+                                    <span class="orderPrice">$280.00</span>
+                                </div>
+                                <div class="order d-flex justify-content-between align-items-center">
+                                    <span class="orderSubtotal">Subtotal</span>
+                                    <span class="orderPrice">$280.00</span>
+                                </div>
+                                <div class="order d-flex justify-content-between align-items-center">
+                                    <span class="checkoutProductPrice">$280.00</span>
+                                    <div class="orderRadioFrom">
+                                        <div class="orderRadio orderRadioContent">
+                                            <label for="Flat" class="orderName">Flat rate: $ 5.00</label>
+                                            <input type="radio" name="orderRadio" id="Flat" checked>
+                                        </div>
+                                        <div class="orderRadio orderRadioContent">
+                                            <label for="Free" class="orderName">Free shipping</label>
+                                            <input type="radio" name="orderRadio" id="Free" checked>
+                                        </div>
+                                        <div class="orderRadio orderRadioContent">
+                                            <label for="pickup" class="orderName">Local pickup</label>
+                                            <input type="radio" name="orderRadio" id="pickup" checked>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="order d-flex justify-content-between align-items-center">
+                                    <span class="orderSubtotal">Total</span>
+                                    <span class="orderPrice">$487.00</span>
+                                </div>
+                                <div class="orderDesc">
+                                    <ul>
+                                        <li class="orderRadio d-flex  align-items-center">
+                                            <input type="radio" name="Check" id="bank" checked>
+                                            <label for="bank" class="orderCheckArea">Direct bank transfer</label>
+                                        </li>
+                                        <li class="orderRadio d-flex  align-items-center mt-2">
+                                            <input type="radio" name="Check" id="payments" checked>
+                                            <label for="payments" class="orderCheckArea">Check payments</label>
+                                        </li>
+                                        <li class="orderRadio d-flex  align-items-center mt-2">
+                                            <span class="orderCheckDesc">Please send a check to Store Name, Store
+                                                Street,
+                                                Store Town, Store State / County,
+                                                Store Postcode.</span>
+                                        </li>
+                                        <li class="orderRadio d-flex  align-items-center mt-2">
+                                            <input type="radio" name="Check" id="payments" checked>
+                                            <label for="payments" class="orderCheckArea">Cash on delivery</label>
+                                        </li>
+                                    </ul>
+                                    <p class="orderPrivacyPolicy mt-5">
+                                        Your personal data will be used to process your order, support your experience
+                                        throughout this website, and for other
+                                        purposes described in our
+                                    </p>
+                                    <a href="PrivacyPolicy.html" class="PrivacyPolicy">privacy policy</a>
+                                    <div class="agree d-flex align-items-center mt-3">
+                                        <input class="accented" type="checkbox" name="agree" id="agree" checked>
+                                        <label for="agree">I have read and agree to the website <a href="#">terms and
+                                                conditions</a></label>
+                                    </div>
+                                </div>
+                                <div class="orderbtn mt-5 mb-3">
+                                    <input type="submit" value="ORDER NOW">
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -341,17 +421,17 @@
         </section>
     </footer>
     <!-- Footer End -->
-    <script src="assets/js/jquery-3.6.1.min.js"></script>
-    <script src="assets/js/jquery.knob.js"></script>
-    <script src="assets/js/jquery.throttle.js"></script>
-    <script src="assets/js/jquery.classycountdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/jquery-slider.js"></script>
-    <script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script src="assets/js/jquery.knob.js"></script>
+<script src="assets/js/jquery.throttle.js"></script>
+<script src="assets/js/jquery.classycountdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.js"></script>
+<script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 

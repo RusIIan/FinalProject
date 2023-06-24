@@ -1,3 +1,4 @@
+// Filter Start
 var lowerSlider = document.querySelector("#lower");
 var upperSlider = document.querySelector("#upper");
 
