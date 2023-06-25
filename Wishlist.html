@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/slider.css">
+    <link rel="stylesheet" href="assets/style/cliendSlider.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Viserpet Html Template</title>
+    <link rel="shortcut icon" href="assets/Images/logo/favicon.png">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header>
+        <section id="Navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <nav id="navbar">
+                            <ul class="navigation">
+                                <li class="navigation-item"><a class="navigation-item-area" href="Index.html">Home</a>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="About.html">About</a>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area  navigationPages"
+                                        href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
+                                    <ul class="submenu">
+                                        <li class="submenuItem "><a class="submenuItem-area"
+                                                href="Shop.html">ProductCategory</a></li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="Faq.html">Faq</a>
+                                        </li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Login</a></li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Registration</a>
+                                        </li>
+                                        <li class="submenuItem "><a class="submenuItem-area" href="#">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area" href="Blog.html">Blog</a>
+                                </li>
+                                <li class="navigation-item"><a class="navigation-item-area"
+                                        href="Contact.html">Contact</a></li>
+                                <li class="navigation-item"><i
+                                        class="navigation-item-area-icon-serach fa-solid fa-magnifying-glass"></i></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="basketCatrRegister">
+                            <ul>
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#" class="cartCount"><span class="cartCountItem">12</span>
+                                        <i class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="MobileNavbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="menu">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Главная</a></li>
+                                    <li><a href="#">О нас</a></li>
+                                    <li><a href="#">Услуги</a></li>
+                                    <li><a href="#">Контакты</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="mobilBasketCatrRegister">
+                            <ul>
+                                <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
+                                <li><a href="#" class="cartCount"><span class="cartCountItem">12</span><i
+                                            class="fa-solid fa-cart-shopping"></i></a></li>
+                                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                            </ul> 
+                            <div class="menuBtn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Start -->
+    <main>
+        <!--=============Breadcrumb Start===========-->
+        <section id="breadcrumb">
+            <div class="breadcrumbContent">
+                <div
+                    class="breadcrumbContentItem d-flex flex-column justify-content-center align-items-center flex-nowrap">
+                    <h1 class="breadcrumbContentArea">Wishlist</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb breadcrumbItem">
+                            <li class="breadcrumb-item breadcrumbArea"><a href="Index.html"><i
+                                        class="fa-solid fa-house"></i>Home</a>
+                            </li>
+                            <li class="breadcrumb-item active breadcrumbArea" aria-current="page">Wishlist</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+        <!--=============Breadcrumb End===========-->
+
+        <!--=============Login Start=============-->
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                    <table class="table cart-table">
+                        <thead>
+                            <tr>
+                                <th class="wishlistTitle">Product Name</th>
+                                <th class="wishlistTitle">Until Price</th>
+                                <th class="wishlistTitle">Delete</th>
+                                <th class="wishlistTitle">Add to Cart</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="wishlistItem">
+                                        <div class="wishlist_productImg">
+                                            <img src="assets/images/Product/product02.png" alt="">
+                                        </div>
+                                        <div class="wishlist__content">
+                                            <h6 class="wishlist_name"> Coco Kat Kitten Milk </h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>$260</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="delete-icon"><i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </td>
+                                <td >
+                                    <a href="cart.html" class="btn wishlist_btn">Add to Cart</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="wishlistItem">
+                                        <div class="wishlist_productImg">
+                                            <img src="assets/images/Product/product03.png" alt="">
+                                        </div>
+                                        <div class="wishlist__content">
+                                            <h6 class="wishlist_name"> Coco Kat Kitten Milk </h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>$260</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="delete-icon"><i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <a href="cart.html" class="btn wishlist_btn">Add to Cart</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="wishlistItem">
+                                        <div class="wishlist_productImg">
+                                            <img src="assets/images/Product/product04.png" alt="">
+                                        </div>
+                                        <div class="wishlist__content">
+                                            <h6 class="wishlist_name"> Coco Kat Kitten Milk </h6>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <p>$260</p>
+                                </td>
+                                <td>
+                                    <button type="button" class="delete-icon"><i class="fa-regular fa-trash-can"></i>
+                                    </button>
+                                </td>
+                                <td>
+                                    <a href="cart.html" class="btn wishlist_btn">Add to Cart</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--=============Login End=============-->
+    </main>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <footer>
+        <section id="footerNavigation">
+            <div class="container mt-5 pt-5">
+                <div class="row">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerLogo">
+                            <img src="assets/Images/Logo/footer-logo02.png" class="footerImage" alt="">
+                        </div>
+                        <div class="footerDescription mt-3">
+                            <span class="footerDescriptionItem">Maecenas tempus tellus eget cdimentum rhoncus sem quam
+                                semper</span>
+                        </div>
+                        <ul class="d-flex gap-4 mt-4 mb-5">
+                            <li class="footerSocialMedia list-unstyled"><a href="#"><i
+                                        class="footerIcon fab fa-facebook-f"></i></a></li>
+                            <li class="footerSocialMedia list-unstyled"><a href="#"><i
+                                        class="footerIcon fab fa-twitter"></i></a></li>
+                            <li class="footerSocialMedia list-unstyled"><a href="#"><i
+                                        class="footerIcon fab fa-linkedin-in"></i></a></li>
+                            <li class="footerSocialMedia list-unstyled"><a href="#"><i
+                                        class="footerIcon fab fa-pinterest-p"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerName">
+                            <h4>Useful link</h4>
+                        </div>
+                        <div class="footerPages">
+                            <ul class="d-block mt-4 mb-5">
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Product
+                                        Category</a></li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Checkout</a></li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Login</a></li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Registration</a>
+                                </li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerName">
+                            <h4>Pages</h4>
+                        </div>
+                        <div class="footerPages">
+                            <ul class="d-block mt-4 mb-5">
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">About Us</a></li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Faq</a></li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Shopping Cart</a>
+                                </li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Blog</a></li>
+                                <li class="footerPagesArea mt-2"><a class="footerPagesItem" href="#">Product Details</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                        <div class="footerSubscrip">
+                            <div class="footerName pb-3">
+                                <h4>Subscribe now</h4>
+                            </div>
+                            <div class="footerSerach">
+                                <input class="footerEmailAddress ps-3 " type="text" name="" id=""
+                                    placeholder="Email Address">
+                                <button class="footerButton"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                            <div class="footerSubscribeDesctription pt-4">
+                                <p class="footerSubscribeDesctriptionItem">Subscribe to our newsletter and get 10% off
+                                    your first purchase..</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section id="footerAllRights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <p class="text-center mt-5 footerCopyright">Copyright © 2023 . All rights reserved by Viserpet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- Footer End -->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/jquery.knob.js"></script>
+    <script src="assets/js/jquery.throttle.js"></script>
+    <script src="assets/js/jquery.classycountdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/eye-password.js"></script>
+    <script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+
+</html>
