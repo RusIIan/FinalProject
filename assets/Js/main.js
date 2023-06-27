@@ -46,3 +46,11 @@ closesidebar.addEventListener("click", (e) => {
   sidebar.classList.remove("visible");
 });
 // sidebar end
+
+// shop details Start
+
+function sendimg(a) {
+  document.getElementById("mainimg").src = a.src;
+}
+
+// shop details End
