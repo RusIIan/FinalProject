@@ -49,6 +49,7 @@ closesidebar.addEventListener("click", (e) => {
 
 // shop details Start
 
+
 function sendimg(a) {
   document.getElementById("mainimg").src = a.src;
 }

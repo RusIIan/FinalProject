@@ -52,47 +52,47 @@
   });
 
   $(document).ready(function () {
-    $(".refundCategory").click(function () {
-      $(".returnCategory").removeClass("active");
-      $(".returnCategory").addClass("disable");
-      $(".refundCategory").removeClass("disable");
-      $(".refundCategory").addClass("active");
-      $(".paymentCategory").removeClass("active");
-      $(".paymentCategory").addClass("disable");
-      $(".accoundCategory").removeClass("active");
-      $(".accoundCategory").addClass("disable");
+    $(".SecondBtn").click(function () {
+      $(".OneBtn").removeClass("active");
+      $(".OneBtn").addClass("disable");
+      $(".SecondBtn").removeClass("disable");
+      $(".SecondBtn").addClass("active");
+      $(".FourthBtn").removeClass("active");
+      $(".FourthBtn").addClass("disable");
+      $(".ThirdBtn").removeClass("active");
+      $(".ThirdBtn").addClass("disable");
       // =====================================
-      $(".accoundCategory").click(function () {
-        $(".refundCategory").removeClass("active");
-        $(".refundCategory").addClass("disable");
-        $(".accoundCategory").removeClass("disable");
-        $(".accoundCategory").addClass("active");
-        $(".paymentCategory").removeClass("active");
-        $(".paymentCategory").addClass("disable");
-        $(".returnCategory").removeClass("active");
-        $(".returnCategory").addClass("disable");
+      $(".ThirdBtn").click(function () {
+        $(".SecondBtn").removeClass("active");
+        $(".SecondBtn").addClass("disable");
+        $(".ThirdBtn").removeClass("disable");
+        $(".ThirdBtn").addClass("active");
+        $(".FourthBtn").removeClass("active");
+        $(".FourthBtn").addClass("disable");
+        $(".OneBtn").removeClass("active");
+        $(".OneBtn").addClass("disable");
       });
       // ======================================
-      $(".paymentCategory").click(function () {
-        $(".accoundCategory").removeClass("active");
-        $(".accoundCategory").addClass("disable");
-        $(".paymentCategory").removeClass("disable");
-        $(".paymentCategory").addClass("active");
-        $(".refundCategory").removeClass("active");
-        $(".refundCategory").addClass("disable");
-        $(".returnCategory").removeClass("active");
-        $(".returnCategory").addClass("disable");
+      $(".FourthBtn").click(function () {
+        $(".ThirdBtn").removeClass("active");
+        $(".ThirdBtn").addClass("disable");
+        $(".FourthBtn").removeClass("disable");
+        $(".FourthBtn").addClass("active");
+        $(".SecondBtn").removeClass("active");
+        $(".SecondBtn").addClass("disable");
+        $(".OneBtn").removeClass("active");
+        $(".OneBtn").addClass("disable");
       });
       // ========================================
-      $(".returnCategory").click(function () {
-        $(".returnCategory").removeClass("disable");
-        $(".returnCategory").addClass("active");
-        $(".accoundCategory").removeClass("active");
-        $(".accoundCategory").addClass("disable");
-        $(".paymentCategory").removeClass("active");
-        $(".paymentCategory").addClass("disable");
-        $(".refundCategory").removeClass("active");
-        $(".refundCategory").addClass("disable");
+      $(".OneBtn").click(function () {
+        $(".OneBtn").removeClass("disable");
+        $(".OneBtn").addClass("active");
+        $(".ThirdBtn").removeClass("active");
+        $(".ThirdBtn").addClass("disable");
+        $(".FourthBtn").removeClass("active");
+        $(".FourthBtn").addClass("disable");
+        $(".SecondBtn").removeClass("active");
+        $(".SecondBtn").addClass("disable");
       });
     });
   });
