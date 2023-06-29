@@ -55,3 +55,18 @@ function sendimg(a) {
 }
 
 // shop details End
+
+
+// home scroll start 
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("Navigation").style.top = "0";
+  } else {
+    document.getElementById("Navigation").style.top = "-50px";
+  }
+}
+// home scroll end 

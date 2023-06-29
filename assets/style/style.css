@@ -44,7 +44,59 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #b30000;
 }
+.scrollToTop {
+  background-color: #804d4e;
+  color: white;
+  cursor: pointer;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 50px;
+  position: fixed;
+  top: 600px;
+  right: 25px;
+  display: none;
+  -webkit-animation: UpDown 2s infinite;
+  animation: UpDown 2s infinite;
+}
+
+@-webkit-keyframes UpDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(10px)
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(10px);
+  }
+}
+
+@keyframes UpDown {
+  0% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(10px)
+  }
+  50% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(10px);
+  }
+}
+.scrollToTop i{
+  font-size: 25px;
+}
+.scrollToTop:hover {
+  color: white;
+  cursor: pointer;
+}
 /*======Scroll end======== */
+
 /* Navbar start  */
 #Navigation {
   background-color: #804d4e;
@@ -1720,12 +1772,12 @@ img {
   padding-left: 20px;
   padding-right: 10px;
   border: 1px solid #eee;
-} 
+}
 
-.shopDetailsBtn{
+.shopDetailsBtn {
   margin-top: 30px;
 }
-.shopDetailsBtn input{
+.shopDetailsBtn input {
   background-color: #804d4e;
   border: transparent;
   color: white;
@@ -1734,32 +1786,32 @@ img {
   font-size: 22px;
   font-weight: 500;
 }
-.shopDetailsBtn input:hover{
+.shopDetailsBtn input:hover {
   background-color: transparent;
   border: 1px solid #804d4e;
   color: #804d4e;
 }
 
-.shopWishlistBtn a{
-  margin:0 0 0 9px;
+.shopWishlistBtn a {
+  margin: 0 0 0 9px;
   border: 1px solid hsl(var(--black) / 0.08);
   padding: 8px 10px;
   border-radius: 50px;
   color: #804d4e;
 }
-.shopWishlistBtn a:hover{
+.shopWishlistBtn a:hover {
   color: #804d4e;
 }
-.detailsProduct__Size li a{
+.detailsProduct__Size li a {
   margin-right: 10px;
   color: #7c7c7c;
 }
-.shopDetailsTitle{
+.shopDetailsTitle {
   font-family: var(--header-font);
   font-weight: 700;
   position: relative;
 }
-.shopDetailsTitle::before{
+.shopDetailsTitle::before {
   position: absolute;
   content: "";
   width: 50px;
@@ -2168,13 +2220,13 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.checkForm{
+.checkForm {
   accent-color: #804d4e;
 }
-input{
+input {
   outline: none;
 }
-textarea{
+textarea {
   outline: none;
 }
 .checOutSectioBtnFrom .checkOutBtn {
@@ -2549,7 +2601,7 @@ textarea {
   color: #804d4e !important;
   border: 1px solid #804d4e !important;
 }
-.wishlist_Shop_btn{
+.wishlist_Shop_btn {
   background-color: #804d4e;
   border: transparent;
   padding: 15px 20px;
@@ -2560,7 +2612,7 @@ textarea {
   border-radius: 50px;
   font-weight: 600;
 }
-.wishlist_Shop_btn_two{
+.wishlist_Shop_btn_two {
   background-color: transparent;
   border: 1px solid #7c7c7c;
   padding: 15px 20px;
@@ -2571,16 +2623,17 @@ textarea {
   border-radius: 50px;
   font-weight: 600;
 }
-.wishlist_Shop_btn:hover{
+.wishlist_Shop_btn:hover {
   color: #804d4e;
   background-color: white;
   border: 1px solid #804d4e;
 }
-.wishlist_Shop_btn_two:hover,.wishlist_Shop_btn_third:hover{
+.wishlist_Shop_btn_two:hover,
+.wishlist_Shop_btn_third:hover {
   color: white;
   background-color: #804d4e;
 }
-.wishlist_Shop_btn_third{
+.wishlist_Shop_btn_third {
   background-color: transparent;
   border: 1px solid #7c7c7c;
   padding: 12px 20px;
@@ -2595,22 +2648,22 @@ textarea {
   z-index: 1;
   padding: 15px 20px !important;
 }
-.orderSummery{
+.orderSummery {
   padding: 25px;
   border: 1px solid hsl(var(--black) / 0.08);
   width: 30%;
   border-radius: 8px;
 }
-.orderSummeryTitle{
+.orderSummeryTitle {
   font-family: var(--header-font);
 }
-.orderSummeryPrice{
+.orderSummeryPrice {
   font-family: var(--header-font);
 }
-.orderTotal{
+.orderTotal {
   position: relative;
 }
-.orderTotal::after{
+.orderTotal::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -2619,11 +2672,11 @@ textarea {
   top: 0;
   background-color: hsl(var(--black) / 0.08);
 }
-.orderTotalItem{
+.orderTotalItem {
   font-family: var(--header-font);
   font-weight: 700;
 }
-.proceedCheckOut{
+.proceedCheckOut {
   padding: 13px 0;
   text-transform: uppercase;
   border: transparent;
@@ -2632,7 +2685,7 @@ textarea {
   color: white;
   width: 65%;
 }
-.proceedCheckOutLabel{
+.proceedCheckOutLabel {
   color: #7c7c7c;
   font-family: var(--header-font);
   font-weight: 600;
