@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style/style.css">
-    <link rel="stylesheet" href="assets/style/slider.css">
-    <link rel="stylesheet" href="assets/style/cliendSlider.css">
+    <link rel="stylesheet" href="assets/Css/style.css">
+    <link rel="stylesheet" href="assets/Css/slider.css">
+    <link rel="stylesheet" href="assets/Css/cliendSlider.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Viserpet Html Template</title>
@@ -209,84 +209,81 @@
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mb-5">
                         <div class="checOutContent">
                             <h4 class="checkoutTitle">Your Order</h4>
-                            <form action="#">
-
-                                <div class="order d-flex justify-content-between align-items-center">
-                                    <ul>
-                                        <li><span class="orderName">Coco Kat Kitten</span></li>
-                                        <li><span class="orderName">Milk X 02</span></li>
-                                    </ul>
-                                    <span class="orderPrice">$280.00</span>
-                                </div>
-                                <div class="order d-flex justify-content-between align-items-center">
-                                    <ul>
-                                        <li><span class="orderName">Coco Kat Kitten</span></li>
-                                        <li><span class="orderName">Milk X 02</span></li>
-                                    </ul>
-                                    <span class="orderPrice">$280.00</span>
-                                </div>
-                                <div class="order d-flex justify-content-between align-items-center">
-                                    <span class="orderSubtotal">Subtotal</span>
-                                    <span class="orderPrice">$280.00</span>
-                                </div>
-                                <div class="order d-flex justify-content-between align-items-center">
-                                    <span class="checkoutProductPrice">$280.00</span>
-                                    <div class="orderRadioFrom">
-                                        <div class="orderRadio orderRadioContent">
-                                            <label for="Flat" class="orderName">Flat rate: $ 5.00</label>
-                                            <input type="radio" name="orderRadio" id="Flat" checked>
-                                        </div>
-                                        <div class="orderRadio orderRadioContent">
-                                            <label for="Free" class="orderName">Free shipping</label>
-                                            <input type="radio" name="orderRadio" id="Free" checked>
-                                        </div>
-                                        <div class="orderRadio orderRadioContent">
-                                            <label for="pickup" class="orderName">Local pickup</label>
-                                            <input type="radio" name="orderRadio" id="pickup" checked>
-                                        </div>
+                            <div class="order d-flex justify-content-between align-items-center">
+                                <ul>
+                                    <li><span class="orderName">Coco Kat Kitten</span></li>
+                                    <li><span class="orderName">Milk X 02</span></li>
+                                </ul>
+                                <span class="orderPrice">$280.00</span>
+                            </div>
+                            <div class="order d-flex justify-content-between align-items-center">
+                                <ul>
+                                    <li><span class="orderName">Coco Kat Kitten</span></li>
+                                    <li><span class="orderName">Milk X 02</span></li>
+                                </ul>
+                                <span class="orderPrice">$280.00</span>
+                            </div>
+                            <div class="order d-flex justify-content-between align-items-center">
+                                <span class="orderSubtotal">Subtotal</span>
+                                <span class="orderPrice">$280.00</span>
+                            </div>
+                            <div class="order d-flex justify-content-between align-items-center">
+                                <span class="checkoutProductPrice">$280.00</span>
+                                <div class="orderRadioFrom">
+                                    <div class="orderRadio orderRadioContent">
+                                        <label for="Flat" class="orderName">Flat rate: $ 5.00</label>
+                                        <input type="radio" name="orderRadio" id="Flat" checked>
+                                    </div>
+                                    <div class="orderRadio orderRadioContent">
+                                        <label for="Free" class="orderName">Free shipping</label>
+                                        <input type="radio" name="orderRadio" id="Free" checked>
+                                    </div>
+                                    <div class="orderRadio orderRadioContent">
+                                        <label for="pickup" class="orderName">Local pickup</label>
+                                        <input type="radio" name="orderRadio" id="pickup" checked>
                                     </div>
                                 </div>
-                                <div class="order d-flex justify-content-between align-items-center">
-                                    <span class="orderSubtotal">Total</span>
-                                    <span class="orderPrice">$487.00</span>
+                            </div>
+                            <div class="order d-flex justify-content-between align-items-center">
+                                <span class="orderSubtotal">Total</span>
+                                <span class="orderPrice">$487.00</span>
+                            </div>
+                            <div class="orderDesc">
+                                <ul>
+                                    <li class="orderRadio d-flex  align-items-center">
+                                        <input type="radio" name="Check" id="bank" checked>
+                                        <label for="bank" class="orderCheckArea">Direct bank transfer</label>
+                                    </li>
+                                    <li class="orderRadio d-flex  align-items-center mt-2">
+                                        <input type="radio" name="Check" id="payments" checked>
+                                        <label for="payments" class="orderCheckArea">Check payments</label>
+                                    </li>
+                                    <li class="orderRadio d-flex  align-items-center mt-2">
+                                        <span class="orderCheckDesc">Please send a check to Store Name, Store
+                                            Street,
+                                            Store Town, Store State / County,
+                                            Store Postcode.</span>
+                                    </li>
+                                    <li class="orderRadio d-flex  align-items-center mt-2">
+                                        <input type="radio" name="Check" id="payments" checked>
+                                        <label for="payments" class="orderCheckArea">Cash on delivery</label>
+                                    </li>
+                                </ul>
+                                <p class="orderPrivacyPolicy mt-5">
+                                    Your personal data will be used to process your order, support your experience
+                                    throughout this website, and for other
+                                    purposes described in our
+                                </p>
+                                <a href="PrivacyPolicy.html" class="PrivacyPolicy">privacy policy</a>
+                                <div class="agree d-flex align-items-center mt-3">
+                                    <input class="accented" type="checkbox" name="agree" id="agree" checked>
+                                    <label for="agree">I have read and agree to the website <a href="#">terms and
+                                            conditions</a></label>
                                 </div>
-                                <div class="orderDesc">
-                                    <ul>
-                                        <li class="orderRadio d-flex  align-items-center">
-                                            <input type="radio" name="Check" id="bank" checked>
-                                            <label for="bank" class="orderCheckArea">Direct bank transfer</label>
-                                        </li>
-                                        <li class="orderRadio d-flex  align-items-center mt-2">
-                                            <input type="radio" name="Check" id="payments" checked>
-                                            <label for="payments" class="orderCheckArea">Check payments</label>
-                                        </li>
-                                        <li class="orderRadio d-flex  align-items-center mt-2">
-                                            <span class="orderCheckDesc">Please send a check to Store Name, Store
-                                                Street,
-                                                Store Town, Store State / County,
-                                                Store Postcode.</span>
-                                        </li>
-                                        <li class="orderRadio d-flex  align-items-center mt-2">
-                                            <input type="radio" name="Check" id="payments" checked>
-                                            <label for="payments" class="orderCheckArea">Cash on delivery</label>
-                                        </li>
-                                    </ul>
-                                    <p class="orderPrivacyPolicy mt-5">
-                                        Your personal data will be used to process your order, support your experience
-                                        throughout this website, and for other
-                                        purposes described in our
-                                    </p>
-                                    <a href="PrivacyPolicy.html" class="PrivacyPolicy">privacy policy</a>
-                                    <div class="agree d-flex align-items-center mt-3">
-                                        <input class="accented" type="checkbox" name="agree" id="agree" checked>
-                                        <label for="agree">I have read and agree to the website <a href="#">terms and
-                                                conditions</a></label>
-                                    </div>
-                                </div>
-                                <div class="orderbtn mt-5 mb-3">
-                                    <input type="submit" value="ORDER NOW">
-                                </div>
-                            </form>
+                            </div>
+                            <div class="orderbtn mt-5 mb-3">
+                                <input type="submit" value="ORDER NOW">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -421,17 +418,17 @@
         </section>
     </footer>
     <!-- Footer End -->
-<script src="assets/js/jquery-3.6.1.min.js"></script>
-<script src="assets/js/jquery.knob.js"></script>
-<script src="assets/js/jquery.throttle.js"></script>
-<script src="assets/js/jquery.classycountdown.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/jquery.js"></script>
-<script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/jquery.knob.js"></script>
+    <script src="assets/js/jquery.throttle.js"></script>
+    <script src="assets/js/jquery.classycountdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 
 

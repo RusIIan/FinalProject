@@ -58,7 +58,6 @@ body {
   -webkit-animation: UpDown 2s infinite;
   animation: UpDown 2s infinite;
 }
-
 @-webkit-keyframes UpDown {
   0% {
     -webkit-transform: translateY(-10px);
@@ -73,7 +72,6 @@ body {
     transform: translateY(10px);
   }
 }
-
 @keyframes UpDown {
   0% {
     -webkit-transform: translateY(-10px);
@@ -935,6 +933,13 @@ img {
   text-align: center;
   background-color: rgb(255, 255, 255) !important;
   border-radius: 5px;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, -0.011),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, -0.021),
+  12.5px 12.5px 10px rgba(0, 0, 0, -0.031),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, -0.037),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, -0.029),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 .chooseSectionAreaItemContent h4 {
   font-family: var(--header-font);
@@ -1529,7 +1534,9 @@ img {
   pointer-events: all;
   z-index: 100;
 }
-
+input[type="checkbox"]{
+  accent-color:#804d4e;
+}
 .price-wrap {
   display: flex;
   color: #7c7c7c;
